@@ -7,7 +7,7 @@ from app.core.db import get_async_session
 from app.core.google_client import get_service
 from app.core.user import current_superuser
 from app.crud.charity_project import charity_project_crud
-from app.services.google_client import(
+from app.services.google_client import (
     set_user_permissions,
     spreadsheets_create,
     spreadsheets_update_value
@@ -15,6 +15,7 @@ from app.services.google_client import(
 
 
 router = APIRouter()
+
 
 @router.post(
     '/',
